@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeti Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="robot-check-container">
+        <p id="robot-check-text">Prove that You Are Not A Robot by just moving the snake towards neon block</p>
+        <canvas id="robot-check-canvas"></canvas>
+    </div>
+
+    <div class="login-container" id="login-section" style="display: none;"> <!-- Initially hidden -->
+        <img src="yeti.png" alt="Yeti" id="yeti-image">
+        <form id="login-form">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p id="error-message" class="error-message"></p>
+        </form>
+    </div>
+
+    <script src="robot-check.js"></script> <!-- Load this first -->
+    <script src="script.js"></script>
+</body>
+</html>

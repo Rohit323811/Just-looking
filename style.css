@@ -1,0 +1,88 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars if canvas is larger */
+}
+
+#robot-check-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Overlay content */
+    top: 0;
+    left: 0;
+    background-color: #2c3e50; /* Dark background for the game */
+    z-index: 100; /* Ensure it's on top */
+}
+
+#robot-check-text {
+    color: #ecf0f1;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#robot-check-canvas {
+    border: 1px solid #3498db; /* Neon-like border for the canvas */
+    background-color: #1a252f; /* Darker canvas background */
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#yeti-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    min-height: 1em; /* Reserve space for the message */
+}
